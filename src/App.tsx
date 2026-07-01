@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { Button, Popover } from "@blueprintjs/core";
+import {Button, PopoverNext} from "@blueprintjs/core";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Popover
+    <PopoverNext
       content={
         <div>
           <h5>Popover Title</h5>
@@ -14,7 +14,7 @@ function App() {
       interactionKind="hover"
     >
       <Button onClick={() => setCount(count + 1)}>Clicked: {count}</Button>
-    </Popover>
+    </PopoverNext>
   )
 }
 
